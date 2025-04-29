@@ -1,11 +1,30 @@
 ## About The Project
 (built With i.e., what kinds of environment?)
 
+### Built With
+* Unity 2022.3.61f1
+* C# for scripting
+* Visual Studio Code
+
 ## Getting Started 
-(how to install and run your program)
+To get this project up and running on your local machine, follow these steps.
 
 ### Prerequisites
+* Unity Hub
+* Unity 2022.3.61f1 or later
+* Git (optional, for cloning)
+* Basic knowledge of Unity Editor
+
 ### Installation
+1. **Option A: Clone the repository**
+   ```bash
+   git clone https://github.com/frvnzz/Assignment1_CC231014_Franz-Aurel_Huber.git
+   ```
+
+2. **Option B: Download directly**
+   * Download the ZIP file from: [Download ZIP](https://github.com/frvnzz/Assignment1_CC231014_Franz-Aurel_Huber/archive/refs/heads/main.zip)
+   * Extract the ZIP file to your desired location
+
 ### Usage
 (show useful examples of how a project can be used)
 
