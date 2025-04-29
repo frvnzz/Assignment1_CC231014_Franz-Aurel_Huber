@@ -64,6 +64,6 @@ public class SphereMesh : MonoBehaviour
             color = Color.cyan
         };
 
-        transform.position = new Vector3(0, 2, 5); // Position to avoid collision
+        transform.position = new Vector3(0, 2, 5);
     }
 }
