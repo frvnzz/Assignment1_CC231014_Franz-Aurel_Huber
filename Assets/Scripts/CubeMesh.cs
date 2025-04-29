@@ -5,6 +5,8 @@ using UnityEngine;
 [RequireComponent(typeof(MeshFilter), typeof(MeshRenderer))]
 public class CubeMesh : MonoBehaviour
 {
+    public Material customMaterial;
+
     void Start()
     {
         Mesh mesh = new Mesh();
@@ -43,12 +45,13 @@ public class CubeMesh : MonoBehaviour
         };
 
         mesh.RecalculateNormals();
+        mesh.RecalculateBounds();
+        mesh.RecalculateTangents();
 
         GetComponent<MeshFilter>().mesh = mesh;
-        GetComponent<MeshRenderer>().material = new Material(Shader.Find("Standard"))
-        {
-            color = Color.green
-        };
+        GetComponent<MeshRenderer>().material = customMaterial != null
+            ? customMaterial
+            : new Material(Shader.Find("Standard"));
 
         transform.position = new Vector3(0, 0, -5);
     }

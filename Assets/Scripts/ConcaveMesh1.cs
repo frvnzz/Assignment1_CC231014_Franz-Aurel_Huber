@@ -11,7 +11,6 @@ public class ConcaveMesh1 : MonoBehaviour
     {
         Mesh mesh = new Mesh();
 
-        // L-shaped concave mesh vertices (kept the same)
         mesh.vertices = new Vector3[]
         {
             // Bottom face
@@ -75,7 +74,6 @@ public class ConcaveMesh1 : MonoBehaviour
             3, 4, 10,
         };
 
-        // Updated UV coordinates for better texture mapping
         mesh.uv = new Vector2[]
         {
             // Bottom face UVs

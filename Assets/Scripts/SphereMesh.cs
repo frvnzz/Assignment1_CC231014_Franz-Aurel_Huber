@@ -5,6 +5,8 @@ using UnityEngine;
 [RequireComponent(typeof(MeshFilter), typeof(MeshRenderer))]
 public class SphereMesh : MonoBehaviour
 {
+    public Material customMaterial;
+
     void Start()
     {
         Mesh mesh = new Mesh();
@@ -56,13 +58,15 @@ public class SphereMesh : MonoBehaviour
 
         mesh.vertices = vertices.ToArray();
         mesh.triangles = triangles.ToArray();
+
         mesh.RecalculateNormals();
+        mesh.RecalculateBounds();
+        mesh.RecalculateTangents();
 
         GetComponent<MeshFilter>().mesh = mesh;
-        GetComponent<MeshRenderer>().material = new Material(Shader.Find("Standard"))
-        {
-            color = Color.cyan
-        };
+        GetComponent<MeshRenderer>().material = customMaterial != null
+            ? customMaterial
+            : new Material(Shader.Find("Standard"));
 
         transform.position = new Vector3(0, 2, 5);
     }
