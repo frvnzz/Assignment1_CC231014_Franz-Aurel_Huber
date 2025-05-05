@@ -96,3 +96,18 @@ xcuserdata/
 
 # Mac application bundle
 *.app/
+
+# Visual Studio Code
+.vscode/
+.vsconfig
+*.code-workspace
+
+# VS Code Unity Debug settings
+/[Aa]ssets/VSCode/*.meta
+/[Aa]ssets/VSCode/
+
+# Documentation meta files
+/[Aa]ssets/[Dd]ocs/*.md.meta
+README.md.meta
+report.md.meta
+LICENSE.md.meta
