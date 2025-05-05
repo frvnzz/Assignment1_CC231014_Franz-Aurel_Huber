@@ -72,3 +72,27 @@ crashlytics-build.properties
 # Temporary auto-generated Android Assets
 /[Aa]ssets/[Ss]treamingAssets/aa.meta
 /[Aa]ssets/[Ss]treamingAssets/aa/*
+
+# Mac system files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+.AppleDouble
+.LSOverride
+
+# Mac IDE files
+*.swp
+*.swo
+xcuserdata/
+*.xcworkspace
+*.mode1v3
+*.mode2v3
+*.perspectivev3
+*.pbxuser
+
+# Mac application bundle
+*.app/
