@@ -1,5 +1,4 @@
 ## About The Project
-(built With i.e., what kinds of environment?)
 
 ### Built With
 * Unity 2022.3.61f1
@@ -22,14 +21,55 @@ To get this project up and running on your local machine, follow these steps.
    ```
 
 2. **Option B: Download directly**
-   * Download the ZIP file from: [Download ZIP](https://github.com/frvnzz/Assignment1_CC231014_Franz-Aurel_Huber/archive/refs/heads/main.zip)
+   * Download the ZIP file from [here](https://github.com/frvnzz/Assignment1_CC231014_Franz-Aurel_Huber/archive/refs/heads/main.zip)
    * Extract the ZIP file to your desired location
 
 ### Usage
-(show useful examples of how a project can be used)
+1. **Open the Project**
+   * Launch Unity Hub
+   * Click "Add" and select the project folder
+   * Open the project with Unity 2022.3.61f1
 
-## Roadmap 
-(what have been implemented and what are the planed features.)
+2. **Setup**
+   * Open the main scene from `Assets/Scenes/Main.scene`
+   * Ensure the SceneManager object has the SceneSetup script attached
+   * Verify all prefabs are assigned in the Inspector:
+     - Sphere Prefab
+     - Cube Prefab
+     - Pyramid Prefab
+     - Concave1 Prefab
+     - Concave2 Prefab
+
+3. **Controls**
+   * Press Play to start the scene
+   * Objects will automatically rotate around their parent objects
+   * The Shooter object:
+     - Constantly shows raycasting with reflection
+     - Green lines show reflection paths
+     - Yellow markers indicate impact points
+
+4. **Custom Changes**
+   * Adjust rotation speed in the ObjectRotator component
+   * Modify ray colors and duration in the Shooter component
+   * Change object materials by:
+     1. Creating a material in the Project window
+     2. Assigning a texture from `Assets/Materials`
+     3. Dragging the material to the Custom Material field
+
+## Roadmap
+### Implemented Features
+* Procedurally generated 3D objects
+  - UV Sphere with texture mapping
+  - Cube with proper UV coordinates
+  - Pyramid with basic geometry
+  - Two concave shapes (L-shape and T-shape)
+* Parent-child relationships with automated rotation in `SceneSetup.cs`
+* Raycasting with reflections through `Shooter.cs`
+* Custom material support for all objects
+
+### Planned Features
+* Interactive camera controls
+* Better (physics-based, etc.) object interactions
 
 ## License 
 Distributed under the Unlicense License. See `/Docs/LICENSE` for more information.
