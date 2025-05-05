@@ -10,7 +10,7 @@ public class SceneSetup : MonoBehaviour
 
     void Start()
     {
-        // Create parent objects
+        // Parent objects
         GameObject parent1 = new GameObject("Parent1");
         GameObject parent2 = new GameObject("Parent2");
 

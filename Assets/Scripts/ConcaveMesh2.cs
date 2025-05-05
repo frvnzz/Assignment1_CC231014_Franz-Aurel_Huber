@@ -10,10 +10,10 @@ public class TShapeMesh : MonoBehaviour
         Mesh mesh = new Mesh();
         mesh.name = "T Shape";
 
-        // Vertices
+        // vertices
         mesh.vertices = new Vector3[]
         {
-            // Bottom vertices (Y = 0)
+            // bottom vertices (Y = 0)
             new Vector3(0, 0, 2),   // 0 - left bar end
             new Vector3(3, 0, 2),   // 1 - right bar end
             new Vector3(3, 0, 1),   // 2
@@ -23,7 +23,7 @@ public class TShapeMesh : MonoBehaviour
             new Vector3(1, 0, 1),   // 6
             new Vector3(0, 0, 1),   // 7
 
-            // Top vertices (Y = 1)
+            // top vertices (Y = 1)
             new Vector3(0, 1, 2),   // 8
             new Vector3(3, 1, 2),   // 9
             new Vector3(3, 1, 1),   //10
@@ -34,7 +34,7 @@ public class TShapeMesh : MonoBehaviour
             new Vector3(0, 1, 1),   //15
         };
 
-        // Triangles (clockwise winding)
+        // triangles (clockwise winding)
         mesh.triangles = new int[]
         {
             // Bottom face
@@ -79,7 +79,7 @@ public class TShapeMesh : MonoBehaviour
             7,8,15,
         };
 
-        // UVs (basic, for texture mapping)
+        // uv coords
         mesh.uv = new Vector2[mesh.vertices.Length];
         for (int i = 0; i < mesh.vertices.Length; i++)
         {

@@ -42,6 +42,21 @@ public class CubeMesh : MonoBehaviour
         1, 6, 5
         };
 
+        // uv coords
+        mesh.uv = new Vector2[]
+        {
+        // Font face
+        new Vector2(0, 0),
+        new Vector2(1, 0),
+        new Vector2(1, 1),
+        new Vector2(0, 1),
+        // Back face
+        new Vector2(0, 0),
+        new Vector2(1, 0),
+        new Vector2(1, 1),
+        new Vector2(0, 1)
+        };
+
         mesh.RecalculateNormals();
         mesh.RecalculateBounds();
         mesh.RecalculateTangents();

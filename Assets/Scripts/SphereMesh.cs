@@ -58,6 +58,17 @@ public class SphereMesh : MonoBehaviour
         mesh.vertices = vertices.ToArray();
         mesh.triangles = triangles.ToArray();
 
+        // uv coordinates
+        Vector2[] uvs = new Vector2[vertices.Count];
+        for (int i = 0; i < vertices.Count; i++)
+        {
+            Vector3 vertex = vertices[i];
+            float u = 0.5f + Mathf.Atan2(vertex.z, vertex.x) / (2f * Mathf.PI);
+            float v = 0.5f - Mathf.Asin(vertex.y) / Mathf.PI;
+            uvs[i] = new Vector2(u, v);
+        }
+        mesh.uv = uvs;
+
         mesh.RecalculateNormals();
         mesh.RecalculateBounds();
         mesh.RecalculateTangents();
