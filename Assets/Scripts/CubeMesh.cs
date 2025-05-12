@@ -22,22 +22,22 @@ public class CubeMesh : MonoBehaviour
 
         mesh.triangles = new int[]
         {
-        // Front face (z = -1)
+        // Front face
         0, 2, 1,
         0, 3, 2,
-        // Back face (z = 1)
+        // Back face
         5, 6, 4,
         4, 6, 7,
-        // Bottom face (y = -1)
+        // Bottom face
         0, 1, 5,
         0, 5, 4,
-        // Top face (y = 1)
+        // Top face
         3, 7, 6,
         3, 6, 2,
-        // Left face (x = -1)
+        // Left face
         0, 4, 7,
         0, 7, 3,
-        // Right face (x = 1)
+        // Right face
         1, 2, 6,
         1, 6, 5
         };
@@ -50,7 +50,7 @@ public class CubeMesh : MonoBehaviour
         new Vector2(1, 0),
         new Vector2(1, 1),
         new Vector2(0, 1),
-        // Back face
+        // back face
         new Vector2(0, 0),
         new Vector2(1, 0),
         new Vector2(1, 1),

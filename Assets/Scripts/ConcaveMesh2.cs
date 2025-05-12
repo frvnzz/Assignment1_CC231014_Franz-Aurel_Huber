@@ -14,8 +14,8 @@ public class TShapeMesh : MonoBehaviour
         mesh.vertices = new Vector3[]
         {
             // bottom vertices (Y = 0)
-            new Vector3(0, 0, 2),   // 0 - left bar end
-            new Vector3(3, 0, 2),   // 1 - right bar end
+            new Vector3(0, 0, 2),   // 0
+            new Vector3(3, 0, 2),   // 1
             new Vector3(3, 0, 1),   // 2
             new Vector3(2, 0, 1),   // 3
             new Vector3(2, 0, 0),   // 4

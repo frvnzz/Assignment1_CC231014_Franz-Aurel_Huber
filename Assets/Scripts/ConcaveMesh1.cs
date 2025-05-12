@@ -31,16 +31,16 @@ public class ConcaveMesh1 : MonoBehaviour
         mesh.triangles = new int[]
         {
             // Bottom face
-            0, 1, 2,        // Triangle 1
-            0, 2, 3,        // Triangle 2
-            0, 3, 4,        // Triangle 3
-            0, 4, 5,        // Triangle 4
+            0, 1, 2,
+            0, 2, 3,
+            0, 3, 4,
+            0, 4, 5,
             
             // Top face
-            6, 8, 7,        // Triangle 1
-            6, 9, 8,        // Triangle 2
-            6, 10, 9,       // Triangle 3
-            6, 11, 10,      // Triangle 4
+            6, 8, 7,
+            6, 9, 8,
+            6, 10, 9,
+            6, 11, 10,
             
             // Outer walls
             // Front wall
@@ -74,7 +74,7 @@ public class ConcaveMesh1 : MonoBehaviour
 
         mesh.uv = new Vector2[]
         {
-            // Bottom face UVs
+            // bottom face uv coords
             new Vector2(0, 0),     // 0
             new Vector2(1, 0),     // 1
             new Vector2(1, 0.5f),  // 2
@@ -82,7 +82,7 @@ public class ConcaveMesh1 : MonoBehaviour
             new Vector2(0.5f, 1),  // 4
             new Vector2(0, 1),     // 5
             
-            // Top face UVs
+            // top face uv coords
             new Vector2(0, 0),     // 6
             new Vector2(1, 0),     // 7
             new Vector2(1, 0.5f),  // 8

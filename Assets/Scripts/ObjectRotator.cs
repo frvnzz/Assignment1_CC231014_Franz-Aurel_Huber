@@ -2,8 +2,14 @@ using UnityEngine;
 
 public class ObjectRotator : MonoBehaviour
 {
-    public float rotationSpeed = 30f;
+    [SerializeField]
+    private float rotationSpeed = 30f;
     public Vector3 rotationAxis = new Vector3(1f, 1f, 1f);
+
+    public void SetRotationSpeed(float speed)
+    {
+        rotationSpeed = speed;
+    }
 
     void Update()
     {

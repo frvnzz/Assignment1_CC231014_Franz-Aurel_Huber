@@ -10,7 +10,7 @@ public class SphereMesh : MonoBehaviour
     {
         Mesh mesh = new Mesh();
 
-        // Generate vertices for a UV sphere
+        // vertices for uv sphere
         int latitudeSegments = 12;
         int longitudeSegments = 24;
         float radius = 1f;
