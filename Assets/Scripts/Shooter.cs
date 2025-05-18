@@ -28,7 +28,7 @@ public class Shooter : MonoBehaviour
 
         if (hasHit)
         {
-            // Log the name of the object hit
+            // log the name of the object hit
             Debug.Log("Hit object: " + currentHit.transform.gameObject.name);
 
             // initial ray

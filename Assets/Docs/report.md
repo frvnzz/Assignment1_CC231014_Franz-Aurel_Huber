@@ -11,14 +11,14 @@ Name: Franz-Aurel Huber
 ## Methodology
 1. **Procedural Mesh Generation**
    - Created basic geometric shapes using vertex and triangle arrays
-   - Implemented UV mapping for proper texture support
+   - Implemented UV mapping for texture support
 
 2. **Scene Organization**
-   - Parent-child relationships using Unity's transform hierarchy
+   - Parent-child relationships with transform hierarchy
 
 3. **Raycasting**
    - Reflection calculations using Vector3.Reflect
-   - Added visual feedback for ray impacts and reflections
+   - Added visual keys for ray impacts and reflections (different colors)
 
 ## Additional Features
 Beyond the basic requirements, the project includes:
@@ -29,8 +29,8 @@ Beyond the basic requirements, the project includes:
 
 ## Discussion/Conclusion
 
-1. **UV Mapping Complexities**
-   - Challenge: Initial texture distortion on spherical surfaces
+1. **UV Mapping**
+   - Challenge: Initial texture distortion with `SphereMesh.cs`
    - Solution: Implemented proper spherical UV projection using trigonometric calculations
    - Result: Achieved smoother texture mapping on curved surfaces
 
@@ -41,7 +41,7 @@ Beyond the basic requirements, the project includes:
 
 3. **Mesh Generation**
    - Challenge: Vertex order causing incorrect face orientation
-   - Solution: Using the right triangle winding order (clockwise)
+   - Solution: Using the right triangle order (clockwise)
    - Result: Proper face visibility direction
 
 ## Work with: 
