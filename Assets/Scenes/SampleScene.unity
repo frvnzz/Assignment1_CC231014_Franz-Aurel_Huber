@@ -172,6 +172,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rayLength: 10
+  raycastLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  primaryRayColor: {r: 1, g: 0, b: 0, a: 1}
+  reflectionRayColor: {r: 0, g: 1, b: 0, a: 1}
+  rayDuration: 1
+  showRaysConstantly: 1
 --- !u!4 &550742076
 Transform:
   m_ObjectHideFlags: 0
@@ -181,7 +188,7 @@ Transform:
   m_GameObject: {fileID: 550742074}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1.7612264, y: 2.4979627, z: 1.2468693}
+  m_LocalPosition: {x: 0.64, y: 3.37, z: -4.32}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -221,6 +228,7 @@ MonoBehaviour:
   pyramidPrefab: {fileID: 7498896400521980796, guid: b2707e3d1c30d4b2f9ebfde418fd34dc, type: 3}
   concave1Prefab: {fileID: 1689837198294175926, guid: 887493f4fcba24045afee0ce30d320c7, type: 3}
   concave2Prefab: {fileID: 8151370676100539221, guid: 20e63d8aef23a4f84995c768f237d52d, type: 3}
+  objectRotationSpeed: 30
 --- !u!4 &623649043
 Transform:
   m_ObjectHideFlags: 0

@@ -111,3 +111,7 @@ xcuserdata/
 README.md.meta
 report.md.meta
 LICENSE.meta
+
+# Ignore build artifacts
+/bin/
+/obj/
